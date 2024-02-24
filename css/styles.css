@@ -93,8 +93,8 @@ svg {
   min-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-  outline: 2px solid #cc142c;
-  outline-offset: -2px;
+  /* outline: 2px solid #cc142c;
+  outline-offset: -2px; */
 }
 
 .logo {
@@ -112,7 +112,7 @@ svg {
   padding: 96px 0;
 }
 
-/* header */
+/* #region header */
 
 .header {
   border-bottom: 1px solid var(--color-light);
@@ -160,10 +160,9 @@ svg {
   align-items: center;
   padding: 0;
 }
+/* #endregion header */
 
-/*MAIN*/
-
-/* section 1 description */
+/* #region section 1 description */
 
 .main-description {
   background-color: var(--color-darkgrey);
@@ -221,8 +220,9 @@ svg {
 .button:focus {
   background-color: var(--color-ocean);
 }
+/* #endregion section 1 description */
 
-/* section 2 company */
+/* #region section 2 company */
 
 .company-item-icon {
   display: none;
@@ -251,8 +251,9 @@ svg {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+/* #endregion section 2 company */
 
-/* section 3 team */
+/* #region section 3 team */
 
 .our-team {
   background-color: var(--color-cloud);
@@ -340,8 +341,9 @@ svg {
 .social-links .link:focus {
   background-color: var(--color-ocean);
 }
+/* #endregion section 3 team */
 
-/* section 4 portfolio */
+/* #region section 4 portfolio */
 
 .section-cont {
   padding: 32px 16px;
@@ -392,8 +394,9 @@ svg {
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
+/* #endregion section 4 portfolio */
 
-/* FOOTER */
+/* #region FOOTER */
 
 .footer {
   background-color: var(--color-darkgrey);
@@ -551,8 +554,9 @@ svg {
 .form-button:focus {
   background-color: var(--color-ocean);
 }
+/* #endregion FOOTER */
 
-/* MODALKA */
+/* #region MODALKA */
 
 .modal-background {
   position: fixed;
@@ -628,6 +632,10 @@ svg {
 .modal-button:focus {
   background-color: var(--color-ocean);
   border: none;
+}
+
+.modal-button:hover .modal-x,
+.modal-button:focus .modal-x {
   fill: var(--color-white);
 }
 
@@ -665,7 +673,6 @@ svg {
 
 .form-input-modal:focus {
   border-color: var(--color-blue);
-  fill: var(--color-white);
 }
 
 .icon-modul {
@@ -792,3 +799,98 @@ svg {
 .user-text {
   margin-left: 8px;
 }
+/* #endregion MODALKA */
+
+/* #region MOBILE MENU */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 72px 24px 40px 16px;
+  z-index: 10000;
+  background-color: var(--color-white);
+  transform: translateX(100%);
+  transition: transform 300ms ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+  transition-timing-function: ease-in;
+}
+
+.mobile-menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--color-light);
+  background-color: #fff;
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus {
+  background-color: var(--color-ocean);
+  border: none;
+}
+
+.mobile-menu-btn:hover .mobile-menu-icon,
+.mobile-menu-btn:focus .mobile-menu-icon {
+  fill: var(--color-white);
+}
+
+
+.mobile-menu-icon {
+ fill: var(--color-darkgrey);
+}
+.mobile-menu-list {
+  margin-bottom: auto;
+}
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-menu-link {
+font-weight: 700;
+font-size: 36px;
+line-height: 111%;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--color-darkgrey);
+}
+.mobile-menu-link.current {
+  color: #404bbf;
+}
+
+.mobile-menu-contacts {
+  margin-bottom: 48px;
+}
+.mobile-menu-contact:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mobile-menu-contact-link {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0.02em;
+color: var(--color-grey);
+}
+
+.mobile-menu-contact-link.accent {
+  color: var(--color-blue);
+}
+
+.social-links-footer.social {
+  gap: 40px;
+}
+
+/* #endregion MOBILE MENU */
