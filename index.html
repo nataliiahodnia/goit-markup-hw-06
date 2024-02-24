@@ -17,6 +17,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!--header-->
     <header class="header">
       <div class="container">
         <nav class="page-nav">
@@ -47,15 +48,22 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-modal-open-mobile>
+          <svg class="burger-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
-      <section class="main-description">
+      <!-- section 1 description -->
+      <section class="main-description section">
         <div class="container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
         </div>
       </section>
+      <!-- section 2 company-->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Lorem Ipsum.</h2>
@@ -111,6 +119,7 @@
           </ul>
         </div>
       </section>
+      <!-- section 3 team -->
       <section class="section our-team">
         <div class="container">
           <h2 class="main-title">Our Team</h2>
@@ -276,6 +285,7 @@
           </ul>
         </div>
       </section>
+      <!-- section 4 portfolio -->
       <section class="section our-portfolio">
         <div class="container">
           <h2 class="main-title">Our Portfolio</h2>
@@ -398,6 +408,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-logo">
@@ -464,7 +475,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-background is-open">
+    <div class="modal-background">
       <div class="modal-window">
         <button class="modal-button" type="button">
           <svg class="modal-x" width="8" height="8">
