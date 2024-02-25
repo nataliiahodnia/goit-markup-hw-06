@@ -114,10 +114,15 @@ svg {
 
 /* #region header */
 
+
 .header {
   border-bottom: 1px solid var(--color-light);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.contacts {
+  display: none;
 }
 
 .header .container {
@@ -185,6 +190,7 @@ svg {
       background-image: linear-gradient(to bottom,
               rgba(46, 47, 66, 0.7),
               rgba(46, 47, 66, 0.7)), url("./../images/background/bg-mob@2x-min.jpg");
+      height: 432px;          
   }
 }
 
@@ -193,6 +199,7 @@ svg {
       background-image: linear-gradient(to bottom,
               rgba(46, 47, 66, 0.7),
               rgba(46, 47, 66, 0.7)), url("./../images/background/bg-tab@1x-min.jpg");
+      height: 436px;
   }
 }
 
@@ -209,6 +216,7 @@ svg {
       background-image: linear-gradient(to bottom,
               rgba(46, 47, 66, 0.7),
               rgba(46, 47, 66, 0.7)), url("./../images/background/bg-desk@1x-min.jpg");
+      height: 600px;    
   }
 }
 
@@ -217,7 +225,9 @@ svg {
       background-image: linear-gradient(to bottom,
               rgba(46, 47, 66, 0.7),
               rgba(46, 47, 66, 0.7)), url("../images/background/bg-desk@2x-min.jpg");
+      height: 600px;
   }
+
 }
 
 
@@ -935,3 +945,208 @@ color: var(--color-grey);
 }
 
 /* #endregion MOBILE MENU */
+
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .footer .container {
+      padding: 0 108px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+/* #region HEDER */
+
+/* 
+ .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+ .header .logo,
+ .header .link { 
+  display: block;
+  padding: 16px 0;
+} */ */
+
+  .container {
+    width: 768px;
+  }
+
+  .section {
+      padding: 96px 0;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+    }
+
+
+  .page-nav-menu {
+    display: flex;
+    gap: 40px; 
+  }
+
+  
+  .page-nav .link {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-darkgrey);
+    font-weight: 500;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .page-item .link {
+    position: relative;
+  }
+
+  .page-item-menu.active .link,
+  .page-item-menu:hover .link,
+  .page-item-menu:focus .link {
+    color: var(--color-ocean);
+  }
+
+  .page-item-menu.active .link::after,
+  .page-item-menu:hover .link::after {
+    content: "";
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    position: relative;
+    bottom: -24px;
+    height: 4px;
+    background-color: var(--color-ocean);
+  }
+
+  .header-logo {
+    padding-block: 0;
+    margin-right: 120px;
+    display: inline-block;
+}
+  
+  .burger-btn {
+    display: none;
+  }
+
+  .contacts {
+    display: block;
+    margin-left: auto;
+  }
+
+  .contacts .link {
+    color: var(--color-grey);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .contacts .link:hover,
+  .link:focus {
+    color: var(--color-ocean);
+  } 
+   
+  .page-nav-menu:first-child {
+      margin-bottom: 12px;
+  }
+
+/* #endregion HEDER */  
+
+/* #region SECTION 1 */
+
+.page-title {
+  font-size: 56px;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  margin-bottom: 48px;
+  max-width: 496px;
+}
+/* #endregion SECTION 1 */
+
+/* #region SECTION 2 */
+
+.company-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+.company-item {
+  width: calc((100% - 24px)/2);
+}
+
+.company-features .title {
+  text-align: left;
+}
+
+/* #endregion SECTION 2 */
+
+/* #region SECTION 3 */
+
+.team-lis {
+  row-gap: 64px;
+}
+/* #endregion SECTION 3 */
+
+/* #region SECTION 4*/
+.our-portfolio-kinds {
+  row-gap: 72px;
+}
+/* #endregion SECTION 4*/
+
+/* #region FOOTER */
+.footer .container {
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.footer-logo {
+  align-items: baseline;
+  text-align: left;
+}
+
+.form-text {
+  text-align: left;
+}
+
+.form-button {
+  margin-top: 0;
+  margin-left: 24px;
+}
+
+/* .footer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+} */
+
+/* #endregion FOOTER */
+
+/* #region Modalka */
+.modal-window {
+  width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px;
+}
+/* #endregion Modalka */
+
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+      width: 1158px;
+  }
+
+  .section {
+      padding: 120px 0;
+  }
+
+
+
+
