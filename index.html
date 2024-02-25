@@ -17,7 +17,7 @@
     <title>Document</title>
   </head>
   <body>
-    <!--header-->
+    <!-- #region header-->
     <header class="header">
       <div class="container">
         <nav class="page-nav">
@@ -55,15 +55,17 @@
         </button>
       </div>
     </header>
+    <!-- #endregion header-->
     <main>
-      <!-- section 1 description -->
+      <!-- #region section 1 description -->
       <section class="main-description section">
         <div class="container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
         </div>
       </section>
-      <!-- section 2 company-->
+      <!-- #endregion section 1 description -->
+      <!-- #region section 2 company-->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Lorem Ipsum.</h2>
@@ -119,13 +121,19 @@
           </ul>
         </div>
       </section>
-      <!-- section 3 team -->
+      <!-- #endregion section 2 company-->     
+      <!-- #region section 3 team -->
       <section class="section our-team">
         <div class="container">
           <h2 class="main-title">Our Team</h2>
           <ul class="team-lis">
             <li class="list-item">
-              <img src="./images/mark.jpg" alt="mrk" width="264" height="260" />
+              <picture>
+                <source srcset="./images/team/mark@1x.jpg 1x, ./images/team/mark@2x 2x" media="(min-width: 1158px)" />
+                <source srcset="./images/team/mark-tab@1x.jpg 1x, ./images/team/mark-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/mark-mob@1x.jpg 1x, ./images/team/mark-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                <img class="team-img" src="./images/team/mark-mob@1x.jpg" alt="Mark Guerrero" width="264" loading="lazy" />
+              </picture>
               <div class="list-item-cont">
                 <h3 class="title">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
@@ -162,7 +170,12 @@
               </div>
             </li>
             <li class="list-item">
-              <img src="./images/tom.jpg" alt="Frd" width="264" height="260" />
+              <picture>
+                <source srcset="./images/team/tom@1x.jpg 1x, ./images/team/tom@2x 2x" media="(min-width: 1158px)" />
+                <source srcset="./images/team/tom-tab@1x.jpg 1x, ./images/team/tom-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/tom-mob@1x.jpg 1x, ./images/team/tom-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                <img class="team-img" src="./images/team/mark-mob@1x.jpg" alt="Tom Ford" width="264" loading="lazy" />
+              </picture>
               <div class="list-item-cont">
                 <h3 class="title">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
@@ -199,12 +212,12 @@
               </div>
             </li>
             <li class="list-item">
-              <img
-                src="./images/camila.jpg"
-                alt="Grc"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/camila@1x.jpg 1x, ./images/team/camila@2x 2x" media="(min-width: 1158px)" />
+                <source srcset="./images/team/camila-tab@1x.jpg 1x, ./images/team/camila-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/camila-mob@1x.jpg 1x, ./images/team/camila-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                <img class="team-img" src="./images/team/camila-mob@1x.jpg" alt="Camila Garcia" width="264" loading="lazy" />
+              </picture>
               <div class="list-item-cont">
                 <h3 class="title">Camila Garcia</h3>
                 <p class="text">Marketing</p>
@@ -241,12 +254,12 @@
               </div>
             </li>
             <li class="list-item">
-              <img
-                src="./images/daniel.jpg"
-                alt="Wlsn"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team/daniel@1x.jpg 1x, ./images/team/daniel@2x 2x" media="(min-width: 1158px)" />
+                <source srcset="./images/team/daniel-tab@1x.jpg 1x, ./images/team/daniel-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/team/daniel-mob@1x.jpg 1x, ./images/team/daniel-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                <img class="team-img" src="./images/team/daniel-mob@1x.jpg" alt="Daniel Wilson" width="264" loading="lazy" />
+              </picture>
               <div class="list-item-cont">
                 <h3 class="title">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
@@ -285,19 +298,20 @@
           </ul>
         </div>
       </section>
-      <!-- section 4 portfolio -->
+      <!-- #endregion section 3 team -->
+      <!-- #region section 4 portfolio -->
       <section class="section our-portfolio">
         <div class="container">
           <h2 class="main-title">Our Portfolio</h2>
           <ul class="our-portfolio-kinds">
             <li class="portfolio-item">
               <div class="box">
-                <img
-                  src="./images/banking.jpg"
-                  alt="bank"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source srcset="./images/portfolio/banking-desk@1x 1x, ./images/team/banking-desk@2x 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/team/banking-tab@1x.jpg 1x, ./images/team/banking-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/banking-mob@1x.jpg 1x, ./images/portfolio/banking-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="portfolio-img" src="./images/portfolio/banking-mob@1x.jpg" alt="Banking App" width="360" height="300" loading="lazy" />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -311,12 +325,12 @@
             </li>
             <li class="portfolio-item">
               <div class="box">
-                <img
-                  src="./images/cashless.jpg"
-                  alt="cash"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source srcset="./images/portfolio/payment-desk@1x 1x, ./images/team/payment-desk@2x 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/team/payment-tab@1x.jpg 1x, ./images/team/payment-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/payment-mob@1x.jpg 1x, ./images/portfolio/payment-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="portfolio-img" src="./images/portfolio/payment-mob@1x.jpg" alt="Cashless Payment" width="360" height="300" loading="lazy" />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -330,12 +344,12 @@
             </li>
             <li class="portfolio-item">
               <div class="box">
-                <img
-                  src="./images/meditation.jpg"
-                  alt="meditationapp"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source srcset="./images/portfolio/meditation-desk@1x 1x, ./images/team/meditation-desk@2x 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/team/meditation-tab@1x.jpg 1x, ./images/team/meditation-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/meditation-mob@1x.jpg 1x, ./images/portfolio/meditation-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="portfolio-img" src="./images/portfolio/meditation-mob@1x.jpg" alt="Meditation App" width="360" height="300" loading="lazy" />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -349,12 +363,12 @@
             </li>
             <li class="portfolio-item">
               <div class="box">
-                <img
-                  src="./images/taxi.jpg"
-                  alt="taxiservice"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source srcset="./images/portfolio/taxi-desk@1x 1x, ./images/team/taxi-desk@2x 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/team/taxi-tab@1x.jpg 1x, ./images/team/taxi-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/taxi-mob@1x.jpg 1x, ./images/portfolio/taxi-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="portfolio-img" src="./images/portfolio/taxi-mob@1x.jpg" alt="Taxi Service" width="360" height="300" loading="lazy" />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -368,12 +382,12 @@
             </li>
             <li class="portfolio-item">
               <div class="box">
-                <img
-                  src="./images/screen.jpg"
-                  alt="illustration"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source srcset="./images/portfolio/screen-desk@1x 1x, ./images/team/screen-desk@2x 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/team/screen-tab@1x.jpg 1x, ./images/team/screen-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/screen-mob@1x.jpg 1x, ./images/portfolio/screen-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="portfolio-img" src="./images/portfolio/screen-mob@1x.jpg" alt="Screen Illustrations" width="360" height="300" loading="lazy" />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -387,12 +401,12 @@
             </li>
             <li class="portfolio-item">
               <div class="box">
-                <img
-                  src="./images/online.jpg"
-                  alt="courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source srcset="./images/portfolio/courses-desk@1x 1x, ./images/team/courses-desk@2x 2x" media="(min-width: 1158px)" />
+                  <source srcset="./images/team/courses-tab@1x.jpg 1x, ./images/team/courses-tab@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/scourses-mob@1x.jpg 1x, ./images/portfolio/courses-mob@2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="portfolio-img" src="./images/portfolio/courses-mob@1x.jpg" alt="Online Courses" width="360" height="300" loading="lazy" />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -407,8 +421,9 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion section 4 portfolio -->
     </main>
-    <!-- footer -->
+    <!-- #region footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-logo">
@@ -469,7 +484,8 @@
         </div>
       </div>
     </footer>
-    <!-- Modal window -->
+     <!-- #endregion footer -->
+    <!-- #region Modal window -->
     <div class="modal-background">
       <div class="modal-window">
         <button class="modal-button" type="button">
@@ -545,7 +561,8 @@
         </form>
       </div>
     </div>
-    <!-- Modal menu -->
+     <!-- #endregion Modal window -->
+    <!-- #region Modal menu -->
     <div class="mobile-menu">
     <button class="mobile-menu-btn">
       <svg class="mobile-menu-icon" width="8" height="8">
@@ -602,5 +619,6 @@
       </li>
     </ul>
     </div>
+    <!-- #endregion Modal menu -->
   </body>
 </html>
